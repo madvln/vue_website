@@ -1,24 +1,66 @@
-# vue-website
+# Vue Website
 
-## Project setup
+Проект на Vue.js с комбинированным выпадающим списком, который позволяет как выбирать из предустановленных вариантов, так и вводить свой текст.
+
+## Требования
+
+- Node.js (версия 14 или выше)
+- npm (обычно устанавливается вместе с Node.js)
+
+## Установка
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/YOUR_USERNAME/vue-website.git
+cd vue-website
 ```
+
+2. Установите зависимости:
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+## Запуск проекта
+
+### Режим разработки
+```bash
 npm run serve
 ```
+После выполнения команды, приложение будет доступно по адресу `http://localhost:8080`
 
-### Compiles and minifies for production
-```
+### Сборка для продакшена
+```bash
 npm run build
 ```
+После сборки, файлы для деплоя будут находиться в папке `dist`
 
-### Lints and fixes files
-```
+### Проверка кода
+```bash
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Структура проекта
+
+```
+vue-website/
+├── public/          # Статические файлы
+├── src/             # Исходный код
+│   ├── assets/      # Ресурсы (изображения, стили)
+│   ├── components/  # Компоненты Vue
+│   ├── App.vue      # Корневой компонент
+│   └── main.js      # Точка входа
+├── package.json     # Зависимости и скрипты
+└── README.md        # Документация
+```
+
+## Функциональность
+
+- Комбинированный выпадающий список
+- Поиск по предустановленным вариантам
+- Возможность ввода своего текста
+- Адаптивный дизайн
+- Анимации и визуальные эффекты
+
+## Настройка
+
+Для настройки проекта можно использовать файл `vue.config.js`. Подробнее о конфигурации можно узнать в [документации Vue CLI](https://cli.vuejs.org/config/).
